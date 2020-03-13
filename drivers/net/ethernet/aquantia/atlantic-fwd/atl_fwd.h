@@ -302,7 +302,8 @@ int atl_fwd_enable_ring(struct atl_fwd_ring *ring);
  *
  * 	@ring: ring to be disabled
  *
- * Stops the ring.
+ * Stops and resets the ring. On next ring enable head and tail
+ * pointers will be zero.
  */
 void atl_fwd_disable_ring(struct atl_fwd_ring *ring);
 

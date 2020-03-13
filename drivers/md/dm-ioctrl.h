@@ -1,5 +1,4 @@
-/* Copyright (c) 2011, 2014-2016 The Linux Foundation. All rights reserved.
- * Copyright (C) 2020 XiaoMi, Inc.
+/* Copyright (c) 2019, The Linux Foundation. All rights reserved.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -9,14 +8,13 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
  * GNU General Public License for more details.
- *
  */
 
-#include <linux/module.h>
-#include <linux/kernel.h>
-#include <linux/init.h>
+#ifndef DM_IOCTRL_INTERNAL_H
+#define DM_IOCTRL_INTERNAL_H
 
-int msm_show_resume_irq_mask = 1;
+#include <linux/dm-ioctl.h>
 
-module_param_named(
-	debug_mask, msm_show_resume_irq_mask, int, 0664);
+int dm_ioctrl(uint cmd, struct dm_ioctl *param);
+
+#endif
