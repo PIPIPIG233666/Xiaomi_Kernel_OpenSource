@@ -41,6 +41,7 @@
 	};
 
 	mdss_dp_pll: qcom,mdss_dp_pll@ae90000 {
+		status = "disabled";
 		compatible = "qcom,mdss_dp_pll_10nm";
 		label = "MDSS DP PLL";
 		cell-index = <0>;

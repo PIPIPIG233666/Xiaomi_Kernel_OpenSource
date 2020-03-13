@@ -429,7 +429,7 @@
 		};
 	};
 
-	video-usr {
+	audio-usr {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-sensors = <&tsens1 2>;
@@ -449,7 +449,7 @@
 		};
 	};
 
-	ddr-0-usr {
+	ddr-usr {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-sensors = <&tsens1 3>;
@@ -569,7 +569,7 @@
 		};
 	};
 
-	ddr-1-usr {
+	video-usr {
 		polling-delay-passive = <0>;
 		polling-delay = <0>;
 		thermal-sensors = <&tsens1 9>;
