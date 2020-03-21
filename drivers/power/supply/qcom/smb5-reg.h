@@ -1,4 +1,5 @@
 /* Copyright (c) 2018-2019 The Linux Foundation. All rights reserved.
+ * Copyright (C) 2020 XiaoMi, Inc.
  *
  * This program is free software; you can redistribute it and/or modify
  * it under the terms of the GNU General Public License version 2 and
@@ -271,19 +272,6 @@ enum {
 	HVDCP_PULSE_COUNT_MAX_QC2_9V = 0x40,
 	HVDCP_PULSE_COUNT_MAX_QC2_12V = 0x80,
 	HVDCP_PULSE_COUNT_MAX_QC2_INVALID = 0xC0
-};
-
-#define USBIN_ADAPTER_ALLOW_CFG_REG		(USBIN_BASE + 0x60)
-enum {
-	USBIN_ADAPTER_ALLOW_5V		= 0,
-	USBIN_ADAPTER_ALLOW_9V		= 2,
-	USBIN_ADAPTER_ALLOW_5V_OR_9V	= 3,
-	USBIN_ADAPTER_ALLOW_12V		= 4,
-	USBIN_ADAPTER_ALLOW_5V_OR_12V	= 5,
-	USBIN_ADAPTER_ALLOW_9V_TO_12V	= 6,
-	USBIN_ADAPTER_ALLOW_5V_OR_9V_TO_12V = 7,
-	USBIN_ADAPTER_ALLOW_5V_TO_9V	= 8,
-	USBIN_ADAPTER_ALLOW_5V_TO_12V	= 12,
 };
 
 #define USBIN_OPTIONS_1_CFG_REG			(USBIN_BASE + 0x62)
